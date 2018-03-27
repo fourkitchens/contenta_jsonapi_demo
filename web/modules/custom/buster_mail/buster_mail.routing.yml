@@ -1,0 +1,8 @@
+
+buster_mail.buster_mail_controller_getMail:
+  path: '/parsemail'
+  defaults:
+    _controller: '\Drupal\buster_mail\Controller\BusterMailController::getMail'
+    _title: 'Buster Mail Controller'
+  requirements:
+    _permission: 'access content'

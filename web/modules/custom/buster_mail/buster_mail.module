@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains buster_mail.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function buster_mail_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the buster_mail module.
+    case 'help.page.buster_mail':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Gets 3D busts from itSees3D emails and creates nodes') . '</p>';
+      return $output;
+
+    default:
+  }
+}
